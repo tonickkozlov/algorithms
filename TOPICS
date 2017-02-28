@@ -1,0 +1,68 @@
+arrays
+divide and conquer
+lists
+strings
+trees
+heaps
+graphs
+dynamic programming
+greedniess
+hash tables
+
+http://www.geeksforgeeks.org/fundamentals-of-algorithms/
+=====Searching and Sorting=====
+http://quiz.geeksforgeeks.org/count-1s-sorted-binary-array/
+http://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-2-expected-linear-time/
+http://www.geeksforgeeks.org/search-almost-sorted-array/
+http://www.geeksforgeeks.org/given-two-sorted-arrays-number-x-find-pair-whose-sum-closest-x/
+http://quiz.geeksforgeeks.org/count-1s-sorted-binary-array/
+=====Greedy Algorithms===== 
+http://www.geeksforgeeks.org/greedy-algorithms-set-1-activity-selection-problem/
+http://www.geeksforgeeks.org/greedy-algorithms-set-2-kruskals-minimum-spanning-tree-mst/
+http://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/
+http://geeksquiz.com/greedy-algorithm-to-find-minimum-number-of-coins/
+=====Dynamic Programming=====
+http://www.geeksforgeeks.org/dynamic-programming-set-5-edit-distance/
+http://www.geeksforgeeks.org/dynamic-programming-set-21-box-stacking-problem/
+http://www.geeksforgeeks.org/minimum-positive-points-to-reach-destination/
+http://www.geeksforgeeks.org/dynamic-programming-set-18-word-wrap/
+... many more
+=====Pattern Searching=====
+http://www.geeksforgeeks.org/searching-for-patterns-set-1-naive-pattern-searching/
+http://www.geeksforgeeks.org/searching-for-patterns-set-3-rabin-karp-algorithm/
+http://www.geeksforgeeks.org/pattern-searching-set-7-boyer-moore-algorithm-bad-character-heuristic/
+http://www.geeksforgeeks.org/suffix-array-set-1-introduction/
+=====String Algorithms=====
+http://www.geeksforgeeks.org/manachers-algorithm-linear-time-longest-palindromic-substring-part-1/
+http://www.geeksforgeeks.org/print-possible-strings-can-made-placing-spaces/
+=====Backtracking=====
+http://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/
+http://www.geeksforgeeks.org/backtracking-set-1-the-knights-tour-problem/
+http://www.geeksforgeeks.org/backttracking-set-5-m-coloring-problem/
+http://www.geeksforgeeks.org/backttracking-set-4-subset-sum/
+=====Divide and Conquer=====
+http://www.geeksforgeeks.org/write-a-c-program-to-calculate-powxn/
+http://www.geeksforgeeks.org/median-of-two-sorted-arrays/
+http://www.geeksforgeeks.org/counting-inversions/
+http://www.geeksforgeeks.org/strassens-matrix-multiplication/
+=====Geometric Algorithms=====
+=====Mathematical Algorithms=====
+http://www.geeksforgeeks.org/write-an-efficient-method-to-check-if-a-number-is-multiple-of-3/
+http://www.geeksforgeeks.org/average-of-a-stream-of-numbers/
+http://www.geeksforgeeks.org/magic-square/
+http://www.geeksforgeeks.org/multiply-two-polynomials-2/
+... many more
+=====Bit Algorithms=====
+http://www.geeksforgeeks.org/find-the-element-that-appears-once/
+http://www.geeksforgeeks.org/a-boolean-array-puzzle/
+http://www.geeksforgeeks.org/smallest-power-of-2-greater-than-or-equal-to-n/
+http://www.geeksforgeeks.org/swap-all-odd-and-even-bits/
+=====Graph Algorithms=====
+http://www.geeksforgeeks.org/detect-cycle-in-a-graph/
+http://quiz.geeksforgeeks.org/check-given-graph-tree/
+http://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/
+http://www.geeksforgeeks.org/shortest-path-for-directed-acyclic-graphs/
+http://www.geeksforgeeks.org/eulerian-path-and-circuit/
+=====Randomized Algorithms=====
+http://www.geeksforgeeks.org/shuffle-a-given-array/
+=====Branch and Bound=====
