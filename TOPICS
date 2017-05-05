@@ -1,14 +1,3 @@
-arrays
-divide and conquer
-lists
-strings
-trees
-heaps
-graphs
-dynamic programming
-greedniess
-hash tables
-
 http://www.geeksforgeeks.org/fundamentals-of-algorithms/
 =====Searching and Sorting=====
 http://quiz.geeksforgeeks.org/count-1s-sorted-binary-array/
@@ -66,3 +55,4 @@ http://www.geeksforgeeks.org/eulerian-path-and-circuit/
 =====Randomized Algorithms=====
 http://www.geeksforgeeks.org/shuffle-a-given-array/
 =====Branch and Bound=====
+Hash Tables?
