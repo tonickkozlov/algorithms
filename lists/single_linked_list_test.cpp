@@ -1,10 +1,11 @@
 #include <iostream>
-#include "list.h"
+#include <vector>
+#include "single_linked_list.h"
 
 using namespace std;
 
 void testBasics() {
-    MyList list;
+    SingleLinkedList list;
     list.PushBack(0);
     list.PushBack(1);
     list.PushBack(2);
@@ -28,7 +29,7 @@ void testBasics() {
 }
 
 void testInsert() {
-    MyList list;
+    SingleLinkedList list;
     list.Insert(0, 0);
     list.PushBack(1);
     list.PushBack(2);
@@ -44,7 +45,7 @@ void testInsert() {
 }
 
 void testReverse() {
-    MyList list;
+    SingleLinkedList list;
     list.Insert(0, 0);
     list.PushBack(1);
     list.PushBack(2);
@@ -53,7 +54,7 @@ void testReverse() {
     list.Reverse();
     list.print(); // 3, 2, 1, 0
 
-    MyList list2;
+    SingleLinkedList list2;
     list2.PushBack(1);
     list2.PushBack(2);
     list2.Reverse();
@@ -61,10 +62,24 @@ void testReverse() {
     list2.print(); // 2, 3, 1
 }
 
+void testIter() {
+    SingleLinkedList list;
+    list.PushBack(1);
+    list.PushBack(2);
+    list.PushBack(3);
+    SingleLinkedList::iterator iter = list.begin();
+    SingleLinkedList::iterator end = list.end();
+
+    for (auto v: list) {
+        cout << v << " ";
+    }
+}
+
 int main(int argc, char**) {
 
-    // testBasics();
-    // testInsert();
+    testBasics();
+    testInsert();
     testReverse();
+    testIter();
     return 0;
 }

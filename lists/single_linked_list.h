@@ -8,7 +8,10 @@
     - Reverse
  **/
 
+#ifndef SINGLE_LINKED_LIST_H
+#define SINGLE_LINKED_LIST_H
 #include <iostream>
+
 
 struct ListNode {
     ListNode(int v): value(v), next(nullptr) {}
@@ -16,9 +19,29 @@ struct ListNode {
     ListNode *next;
 };
 
-class MyList {
+class SingleLinkedList {
     public:
-        MyList(): head_(nullptr), tail_(nullptr), size_(0) {}
+        class iterator: public std::iterator<std::input_iterator_tag, const ListNode*> {
+        public:
+            iterator(const ListNode* begin): itr(begin) {}
+            iterator& operator++() {
+                itr = itr->next;
+                return *this;
+            }
+            bool operator == (const iterator &rhs) const {
+                return itr == rhs.itr;
+            }
+
+            bool operator != (const iterator &rhs) const {
+                return !(*this == rhs);
+            }
+            int operator*() const{
+                return itr->value;
+            }
+        private:
+        const ListNode* itr;
+        };
+        SingleLinkedList(): head_(nullptr), tail_(nullptr), size_(0) {}
         void PushBack(int value) {
             if (!head_) {
                 head_ = new ListNode(value);
@@ -105,8 +128,17 @@ class MyList {
             std::cout << std::endl;
         }
         int size() { return size_; }
+        iterator begin() {
+            return iterator(head_);
+        }
+
+        iterator end() {
+            return iterator(nullptr);
+        }
     private:
         ListNode* head_;
         ListNode* tail_;
         int size_;
 };
+
+#endif
