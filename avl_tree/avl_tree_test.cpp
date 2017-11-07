@@ -118,9 +118,7 @@ TEST_CASE( "Small left rotation ") {
     REQUIRE(inorder(root) == "ABCDEFG");
     REQUIRE(inorderNext(root) == "ABCDEFG");
     REQUIRE(balanceFactor(root) == 2);
-    print(root);
     root = rotateLeft(root, root->right);
-    print(root);
     REQUIRE(balanceFactor(root) == 0);
     REQUIRE(inorder(root) == "ABCDEFG");
     // // makes sure parent pointers are correct
@@ -138,9 +136,7 @@ TEST_CASE( "Small rigth rotation ") {
     REQUIRE(inorder(root) == "ABCDEFG");
     REQUIRE(inorderNext(root) == "ABCDEFG");
     REQUIRE(balanceFactor(root) == -2);
-    print(root);
     root = rotateRight(root, root->left);
-    print(root);
     REQUIRE(balanceFactor(root) == 0);
     REQUIRE(inorder(root) == "ABCDEFG");
     // makes sure parent pointers are correct
@@ -174,7 +170,6 @@ TEST_CASE( "Inserting a new node" ) {
 
     root = new node('D', new node('B'));
     root = insert(root, 'C');
-    cout << "INSERTED" << endl;
     REQUIRE(inorder(root) == "BCD");
     REQUIRE(balanceFactor(root) == 0);
 
@@ -190,20 +185,17 @@ TEST_CASE( "Inserting a new node" ) {
     REQUIRE(inorderNext(root) == "DMOST");
     // tree is balanced
     REQUIRE(balanceFactor(root) == 1);
-    print(root);
 
     root =  new node('S',
                 new node('O',
                     new node('M'),
                     nullptr),
                 new node('T'));
-    print(root);
     root = insert(root, 'D');
     REQUIRE(balanceFactor(root) == -1);
 }
 
 TEST_CASE( "Balancing an alphabeth" ) {
-    cout << "--------------------" << endl;
     node *root = new node('M');
     for (char c = 'A'; c <= 'Z'; ++c) {
         if (c != 'M') {
